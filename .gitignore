@@ -1,0 +1,16 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints/
+
+# Data (keep raw + processed, ignore very large or intermediate files if any)
+data/intermediate/
+data/tmp/
+
+# Environments
+.env/
+.venv/
+*.swp
+
+# OS / editor
+.DS_Store
