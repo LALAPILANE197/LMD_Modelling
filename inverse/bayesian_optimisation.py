@@ -81,11 +81,11 @@ print(f"  Aspect ratio range : {y_AR.min():.3f} – {y_AR.max():.3f}")
 # BO can actively search the unexplored high-feed regime
 # where Phase 1 found high uncertainty.
 
-H_target  = 1000.0    # µm
-AR_target = 0.30     # dimensionless
+H_target  = 1200.0    # µm
+AR_target = 0.35     # dimensionless
 
 # Parameter bounds — same as Phase 1
-BOUNDS = [(1600.0, 2500.0),   # Power (W)
+BOUNDS = [(1600.0, 2800.0),   # Power (W)
           (0.8,    1.6),       # Speed (mm/s)
           (2.0,    8.0)]       # Feed (g/min)
 

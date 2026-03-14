@@ -56,7 +56,7 @@ print("  Scaler Aspect : loaded")
 # A reasonable starting target is near the dataset mean.
 
 H_target  = 1000.0   # µm  — adjust to your application
-AR_target = 0.3    # W/H — adjust to your application
+AR_target = 0.35    # W/H — adjust to your application
 
 print(f"\nTarget bead height   : {H_target:.1f} µm")
 print(f"Target aspect ratio  : {AR_target:.3f}")
@@ -151,7 +151,7 @@ def predict_geometry_with_uncertainty(X_raw):
 
 # ── Edit these bounds to match your actual experimental window ──
 BOUNDS_LOWER = np.array([1600.0,  0.8,  2.0])  # [W, mm/s, g/min]
-BOUNDS_UPPER = np.array([2500.0,  1.6,  8.0])  # [W, mm/s, g/min]
+BOUNDS_UPPER = np.array([2800.0,  1.6,  8.0])  # [W, mm/s, g/min]
 # ───────────────────────────────────────────────────────────────
 
 class LMDProblem(Problem):
@@ -218,10 +218,10 @@ print("=" * 60)
 
 problem    = LMDProblem()
 algorithm  = NSGA2(
-    pop_size=200,
+    pop_size=100,
     eliminate_duplicates=True   # prevents identical solutions
 )
-termination = get_termination("n_gen", 500)
+termination = get_termination("n_gen", 300)
 
 result = minimize(
     problem,
