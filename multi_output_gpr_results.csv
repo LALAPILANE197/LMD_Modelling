@@ -1,3 +1,4 @@
-Target,Model,R²,MAE,MAPE (%),vs Single GPR Δ R²
-Height,Multi-GPR,0.9682,58.8267,9.11,0.013
-Aspect Ratio,Multi-GPR,0.9689,0.0283,9.14,0.095
+Target,Multi_GPR_R2,Multi_GPR_RMSE,Multi_GPR_MAE,Multi_GPR_MAPE_pct,Single_GPR_R2,Single_GPR_MAE,Delta_R2
+Height,0.9682,75.98,58.83,9.11,0.9552,64.63,0.013
+Aspect Ratio,0.9689,0.0379,0.0283,9.14,0.8739,0.0379,0.095
+Dilution %,0.8106,6.17,4.42,13.52,0.9023,3.44,-0.0917
