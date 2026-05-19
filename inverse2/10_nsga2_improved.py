@@ -131,9 +131,9 @@ print(f"  scaler_dilution      : µ={scaler_D.mean_[0]:.2f}%  "
 # ─────────────────────────────────────────────────────────────
 
 # ── Desired bead geometry (inverse problem targets) ──────────
-H_TARGET  = 1200.0   # µm  — desired bead height
-AR_TARGET =    0.46  #     — desired aspect ratio (Width / Height)
-D_TARGET  =   35.0   # %   — desired dilution percentage
+H_TARGET  = 1800.0   # µm  — desired bead height
+AR_TARGET =    0.5  #     — desired aspect ratio (Width / Height)
+D_TARGET  =   20.0   # %   — desired dilution percentage
 
 # ── Dilution hard constraints (metallurgical engineering bounds)
 # D < 15% → insufficient substrate bonding (shallow penetration)
@@ -580,9 +580,9 @@ ax.set_title('f₁ vs f₂\nAR Deviation vs Dilution Error')
 ax.legend(fontsize=8, loc='upper right')
 
 plt.tight_layout()
-fig1.savefig("fig_pareto_projections2.png", bbox_inches='tight')
+fig1.savefig("fig_pareto_projections3.png", bbox_inches='tight')
 plt.close(fig1)
-print("  ✓ Saved: fig_pareto_projections2.png")
+print("  ✓ Saved: fig_pareto_projections3.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 2 — 3-D Pareto surface
@@ -615,9 +615,9 @@ ax3d.set_title(
 ax3d.legend(fontsize=9)
 ax3d.view_init(elev=25, azim=135)
 fig2.tight_layout()
-fig2.savefig("fig_pareto_3d_surface2.png", bbox_inches='tight')
+fig2.savefig("fig_pareto_3d_surface3.png", bbox_inches='tight')
 plt.close(fig2)
-print("  ✓ Saved: fig_pareto_3d_surface2.png")
+print("  ✓ Saved: fig_pareto_3d_surface3.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 3 — NSGA-II convergence + Hypervolume
@@ -660,9 +660,9 @@ ax.set_title('Pareto Front Quality (Hypervolume)\n'
 ax.legend()
 
 plt.tight_layout()
-fig3.savefig("fig_convergence_diagnostics2.png", bbox_inches='tight')
+fig3.savefig("fig_convergence_diagnostics3.png", bbox_inches='tight')
 plt.close(fig3)
-print("  ✓ Saved: fig_convergence_diagnostics2.png")
+print("  ✓ Saved: fig_convergence_diagnostics3.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 4 — Pareto solutions in LMD parameter space
@@ -717,9 +717,9 @@ ax.set_title('Speed vs Feed\n(colour = Pred. AR)')
 ax.legend(fontsize=8)
 
 plt.tight_layout()
-fig4.savefig("fig_parameter_space2.png", bbox_inches='tight')
+fig4.savefig("fig_parameter_space3.png", bbox_inches='tight')
 plt.close(fig4)
-print("  ✓ Saved: fig_parameter_space2.png")
+print("  ✓ Saved: fig_parameter_space3.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 5 — Dilution feasibility + GPR uncertainty scatter
@@ -775,9 +775,9 @@ ax.set_title('Surrogate Prediction Uncertainty\n'
 ax.legend(fontsize=8)
 
 plt.tight_layout()
-fig5.savefig("fig_feasibility_uncertainty2.png", bbox_inches='tight')
+fig5.savefig("fig_feasibility_uncertainty3.png", bbox_inches='tight')
 plt.close(fig5)
-print("  ✓ Saved: fig_feasibility_uncertainty2.png")
+print("  ✓ Saved: fig_feasibility_uncertainty3.png")
 
 # ─────────────────────────────────────────────────────────────
 # FIGURE 6 — Candidate comparison bar chart
@@ -809,25 +809,25 @@ ax.legend(fontsize=9)
 ax.axhline(1.0, color='grey', ls=':', lw=1.2,
            label='σ = 1 reference line')
 plt.tight_layout()
-fig6.savefig("fig_candidate_comparison2.png", bbox_inches='tight')
+fig6.savefig("fig_candidate_comparison3.png", bbox_inches='tight')
 plt.close(fig6)
-print("  ✓ Saved: fig_candidate_comparison2.png")
+print("  ✓ Saved: fig_candidate_comparison3.png")
 
 # ─────────────────────────────────────────────────────────────
 # SECTION 11 — SAVE ALL OUTPUTS TO CSV
 # ─────────────────────────────────────────────────────────────
 
 # Full Pareto front with all enriched columns
-pareto_df.to_csv("nsga2_pareto_full1.csv", index=False)
-print("  ✓ Saved: nsga2_pareto_full1.csv")
+pareto_df.to_csv("nsga2_pareto_full3.csv", index=False)
+print("  ✓ Saved: nsga2_pareto_full3.csv")
 
 # Hypervolume convergence history
 if hv_hist:
     pd.DataFrame({
         "generation" : range(1, len(hv_hist) + 1),
         "hypervolume": hv_hist,
-    }).to_csv("nsga2_hypervolume_history2.csv", index=False)
-    print("  ✓ Saved: nsga2_hypervolume_history2.csv")
+    }).to_csv("nsga2_hypervolume_history3.csv", index=False)
+    print("  ✓ Saved: nsga2_hypervolume_history3.csv")
 
 # Per-generation best objectives
 if result.history:
@@ -836,8 +836,8 @@ if result.history:
         "min_height_err"  : gen_h,
         "min_ar_dev"      : gen_ar,
         "min_dilution_err": gen_d,
-    }).to_csv("nsga2_generation_history2.csv", index=False)
-    print("  ✓ Saved: nsga2_generation_history2.csv")
+    }).to_csv("nsga2_generation_history3.csv", index=False)
+    print("  ✓ Saved: nsga2_generation_history3.csv")
 
 # Experimental validation candidates
 cand_rows = []
@@ -861,8 +861,8 @@ for lbl, row in candidates.items():
         "Uncertainty_Score": round(float(row["Uncertainty_Score"]),  5),
     })
 pd.DataFrame(cand_rows).to_csv(
-    "nsga2_validation_candidates2.csv", index=False)
-print("  ✓ Saved: nsga2_validation_candidates2.csv")
+    "nsga2_validation_candidates3.csv", index=False)
+print("  ✓ Saved: nsga2_validation_candidates3.csv")
 
 # ─────────────────────────────────────────────────────────────
 # SECTION 12 — FINAL SUMMARY
