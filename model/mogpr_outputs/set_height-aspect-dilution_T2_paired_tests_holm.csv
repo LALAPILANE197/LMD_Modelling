@@ -1,16 +1,16 @@
 target,A,B,MAE_A,MAE_B,pct_change_MAE,repeats_A_better,p_raw,p_holm
-Height (µm),ICM,SO-GPR,56.9642,57.5967,-1.0981,1/2,0.9202,1.0
-Height (µm),LMC-2,SO-GPR,65.8817,57.5967,14.3844,0/2,0.0402,0.5462
-Height (µm),ICM-indep,SO-GPR,57.3715,57.5967,-0.391,1/2,0.5849,1.0
-Height (µm),ICM,ICM-indep,56.9642,57.3715,-0.71,2/2,0.9429,1.0
-Height (µm),SO-GPR,skGPR,57.5967,57.7789,-0.3152,1/2,0.1296,1.0
-Aspect ratio (-),ICM,SO-GPR,0.0295,0.0284,4.105,0/2,0.1083,1.0
-Aspect ratio (-),LMC-2,SO-GPR,0.0349,0.0284,23.0846,0/2,0.039,0.5462
-Aspect ratio (-),ICM-indep,SO-GPR,0.0279,0.0284,-1.5919,2/2,0.0418,0.5462
-Aspect ratio (-),ICM,ICM-indep,0.0295,0.0279,5.7891,0/2,0.0947,1.0
-Aspect ratio (-),SO-GPR,skGPR,0.0284,0.0281,0.9528,0/2,0.0022,0.0334
-Dilution (%),ICM,SO-GPR,3.0272,3.038,-0.3539,1/2,0.9397,1.0
-Dilution (%),LMC-2,SO-GPR,3.3928,3.038,11.6795,0/2,0.0947,1.0
-Dilution (%),ICM-indep,SO-GPR,3.0743,3.038,1.1955,0/2,0.675,1.0
-Dilution (%),ICM,ICM-indep,3.0272,3.0743,-1.5312,2/2,0.352,1.0
-Dilution (%),SO-GPR,skGPR,3.038,2.9862,1.733,0/2,0.1661,1.0
+Height (µm),ICM,SO-GPR,43.2653,43.2397,0.0594,1/3,0.9592,1.0
+Height (µm),LMC-2,SO-GPR,43.1433,43.2397,-0.2228,0/3,0.8013,1.0
+Height (µm),ICM-indep,SO-GPR,42.8457,43.2397,-0.9111,1/3,0.443,1.0
+Height (µm),ICM,ICM-indep,43.2653,42.8457,0.9794,1/3,0.7887,1.0
+Height (µm),SO-GPR,skGPR,43.2397,42.8858,0.8252,1/3,0.2632,1.0
+Aspect ratio (-),ICM,SO-GPR,0.0229,0.0223,2.6854,1/3,0.7021,1.0
+Aspect ratio (-),LMC-2,SO-GPR,0.0263,0.0223,17.8552,0/3,0.0996,1.0
+Aspect ratio (-),ICM-indep,SO-GPR,0.0222,0.0223,-0.4796,2/3,0.7512,1.0
+Aspect ratio (-),ICM,ICM-indep,0.0229,0.0222,3.1803,0/3,0.7919,1.0
+Aspect ratio (-),SO-GPR,skGPR,0.0223,0.0223,-0.0171,2/3,0.7668,1.0
+Dilution (%),ICM,SO-GPR,2.5666,2.5023,2.5723,1/3,0.514,1.0
+Dilution (%),LMC-2,SO-GPR,2.5942,2.5023,3.6744,1/3,0.4167,1.0
+Dilution (%),ICM-indep,SO-GPR,2.552,2.5023,1.9867,1/3,0.3959,1.0
+Dilution (%),ICM,ICM-indep,2.5666,2.552,0.5742,2/3,0.1205,1.0
+Dilution (%),SO-GPR,skGPR,2.5023,2.511,-0.347,3/3,0.8172,1.0
