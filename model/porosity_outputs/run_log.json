@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-11-03 22:35:57",
+  "python": "3.11.14",
+  "sklearn": "1.7.2",
+  "numpy": "2.3.5",
+  "pandas": "2.3.3",
+  "smote_available": true,
+  "data_path": "processed_data.csv",
+  "n_samples": 89,
+  "features": [
+    "Power",
+    "Speed",
+    "Feed"
+  ],
+  "seed": 42,
+  "n_repeats": 5,
+  "inner_scoring": "balanced_accuracy",
+  "fast_mode": false,
+  "feed_half_values": 44,
+  "best_configuration": "LR | class weight"
+}

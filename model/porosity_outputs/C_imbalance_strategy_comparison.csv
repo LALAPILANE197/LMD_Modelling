@@ -1,0 +1,7 @@
+classifier,strategy,balanced_accuracy,recall_porous,specificity,PR_AUC
+LR,class weight,0.7486,0.7667,0.7304,0.9155
+LR,SMOTE,0.7442,0.7667,0.7217,0.903
+RF,class weight,0.7125,0.8424,0.5826,0.8742
+RF,SMOTE,0.7017,0.8121,0.5913,0.8595
+SVM,class weight,0.7358,0.7152,0.7565,0.8927
+SVM,SMOTE,0.7414,0.7697,0.713,0.9171
