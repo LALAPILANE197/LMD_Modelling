@@ -1,11 +1,11 @@
 target,A,B,MAE_A,MAE_B,pct_change_MAE,repeats_A_better,p_raw,p_holm
-Height (µm),ICM,SO-GPR,43.9431,43.2397,1.6269,0/3,0.9951,1.0
-Height (µm),LMC-2,SO-GPR,40.3644,43.2397,-6.6496,2/3,0.1551,1.0
-Height (µm),ICM-indep,SO-GPR,43.4478,43.2397,0.4813,1/3,0.5517,1.0
-Height (µm),ICM,ICM-indep,43.9431,43.4478,1.1401,0/3,0.9072,1.0
-Height (µm),SO-GPR,skGPR,43.2397,42.8858,0.8252,1/3,0.2632,1.0
-Dilution (%),ICM,SO-GPR,2.5045,2.5023,0.089,2/3,0.862,1.0
-Dilution (%),LMC-2,SO-GPR,2.4519,2.5023,-2.0117,1/3,0.4262,1.0
-Dilution (%),ICM-indep,SO-GPR,2.5551,2.5023,2.1105,2/3,0.3152,1.0
-Dilution (%),ICM,ICM-indep,2.5045,2.5551,-1.9798,2/3,0.2084,1.0
-Dilution (%),SO-GPR,skGPR,2.5023,2.511,-0.347,3/3,0.8172,1.0
+Height (µm),ICM,SO-GPR,42.9409,42.494,1.0516,0/5,0.7112,1.0
+Height (µm),LMC-2,SO-GPR,40.1316,42.494,-5.5594,4/5,0.2667,1.0
+Height (µm),ICM-indep,SO-GPR,42.87,42.494,0.8846,1/5,0.6134,1.0
+Height (µm),ICM,ICM-indep,42.9409,42.87,0.1655,1/5,0.7668,1.0
+Height (µm),SO-GPR,skGPR,42.494,42.1756,0.755,2/5,0.1939,1.0
+Dilution (%),ICM,SO-GPR,2.5173,2.5157,0.0628,2/5,0.663,1.0
+Dilution (%),LMC-2,SO-GPR,2.4424,2.5157,-2.9154,2/5,0.352,1.0
+Dilution (%),ICM-indep,SO-GPR,2.5758,2.5157,2.3871,2/5,0.352,1.0
+Dilution (%),ICM,ICM-indep,2.5173,2.5758,-2.27,3/5,0.1587,1.0
+Dilution (%),SO-GPR,skGPR,2.5157,2.512,0.1466,5/5,0.6601,1.0

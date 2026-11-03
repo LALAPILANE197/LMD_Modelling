@@ -1,9 +1,9 @@
 | hypothesis | comparison | metric | pct_lower_than_ANN | threshold_10pct_met |
 |---|---|---|---|---|
-| H1 | GPR vs ANN | RMSE | 34.9 | True |
-| H1 | GPR vs ANN | MAE | 30.4 | True |
-| H1 | SVR vs ANN | RMSE | -6.4 | False |
-| H1 | SVR vs ANN | MAE | -7.9 | False |
+| H1 | GPR vs ANN | RMSE | 34 | True |
+| H1 | GPR vs ANN | MAE | 28.3 | True |
+| H1 | SVR vs ANN | RMSE | -17.4 | False |
+| H1 | SVR vs ANN | MAE | -17 | False |
 | H2 | GPR lowest of all | RMSE | nan | True |
 | H2 | GPR lowest of all | MAE | nan | True |
 | H2 | GPR vs each rival, Holm p<0.05 (n sig / n rivals) | Wilcoxon | nan | 3/4 |
