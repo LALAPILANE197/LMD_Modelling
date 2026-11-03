@@ -1,8 +1,8 @@
 ,hypothesis,comparison,metric,pct_lower_than_ANN,threshold_10pct_met
-0,H1,GPR vs ANN,RMSE,26.9,True
-1,H1,GPR vs ANN,MAE,25.2,True
-2,H1,SVR vs ANN,RMSE,-21.0,False
-3,H1,SVR vs ANN,MAE,-13.9,False
+0,H1,GPR vs ANN,RMSE,33.7,True
+1,H1,GPR vs ANN,MAE,31.2,True
+2,H1,SVR vs ANN,RMSE,-9.0,False
+3,H1,SVR vs ANN,MAE,-7.6,False
 4,H2,GPR lowest of all,RMSE,,True
 5,H2,GPR lowest of all,MAE,,True
-6,H2,"GPR vs each rival, Holm p<0.05 (n sig / n rivals)",Wilcoxon,,3/4
+6,H2,"GPR vs each rival, Holm p<0.05 (n sig / n rivals)",Wilcoxon,,4/4
